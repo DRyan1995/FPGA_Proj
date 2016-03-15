@@ -1,0 +1,5 @@
+module wifi(txd,rxd);
+	input rxd;
+	output txd;
+	assain txd=rxd;
+endmodule

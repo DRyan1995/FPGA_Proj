@@ -1,0 +1,7 @@
+vhdtdtfi -lib work F:/123/TOP/wifi.v -lang verilog -prj TOP -o wifi.spl -module wifi -template d:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 wifi.spl F:/123/TOP/wifi.sym 
+vhdtdtfi -lib work D:/TOP/wifi.v -lang verilog -prj TOP -o wifi.spl -module wifi -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 wifi.spl D:/TOP/wifi.sym 
+vhdtdtfi -lang verilog -prj TOP -o D:/TOP/wifi.tfi -lib work D:/TOP//wifi.v -module wifi -template D:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work D:/TOP/wifi.v -lang verilog -prj TOP -o wifi.spl -module wifi -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 wifi.spl D:/TOP/wifi.sym 

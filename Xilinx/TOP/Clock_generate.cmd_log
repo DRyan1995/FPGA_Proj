@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/TOP/Clock_generate.v -lang verilog -prj TOP -o Clock_generate.spl -module Clock_generate -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 Clock_generate.spl D:/TOP/Clock_generate.sym 

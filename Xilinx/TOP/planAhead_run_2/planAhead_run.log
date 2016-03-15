@@ -1,0 +1,70 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/TOP/pa.fromNetlist.tcl
+# create_project -name TOP -dir "D:/TOP/planAhead_run_2" -part xc7a100tcsg324-3
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/TOP/TOP.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/TOP} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "TOP.ucf" [current_fileset -constrset]
+Adding file 'D:/TOP/TOP.ucf' to fileset 'constrs_1'
+# add_files [list {TOP.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc7a100tcsg324-3
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design TOP.ngc ...
+WARNING:NetListWriters:298 - No output is written to TOP.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_4/async_send_inst/Madd_GND_7_o_BaudGeneInc[16]_add_3_OUT_lut[7 : 0] on
+   block TOP is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file TOP.edif ...
+ngc2edif: Total memory usage is 83772 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/TOP.data/cache/TOP_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/TOP.data/cache/TOP_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 184 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/ConfigModes.xml
+Loading list of drcs for the architecture : D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/drc.xml
+Parsing UCF File [D:/TOP/TOP.ucf]
+Finished Parsing UCF File [D:/TOP/TOP.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 184 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+  FD => FDCE: 38 instances
+  FDC => FDCE: 1 instances
+  FDE => FDCE: 123 instances
+  FDR => FDRE: 20 instances
+  IOBUF => IOBUF (OBUFT, IBUF): 1 instances
+
+Phase 0 | Netlist Checksum: 4f87c81e
+link_design: Time (s): elapsed = 00:00:17 . Memory (MB): peak = 802.633 ; gain = 395.355
+startgroup
+set_property package_pin B13 [get_ports WIFI_RXD_IN]
+endgroup
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed Dec 23 14:01:30 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

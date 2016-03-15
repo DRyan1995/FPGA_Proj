@@ -1,0 +1,6 @@
+vhdtdtfi -lib work D:/TOP/alarm_en.v -lang verilog -prj TOP -o alarm_en.spl -module alarm_en -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 alarm_en.spl D:/TOP/alarm_en.sym 
+vhdtdtfi -lib work D:/TOP/alarm_en.v -lang verilog -prj TOP -o alarm_en.spl -module alarm_en -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 alarm_en.spl D:/TOP/alarm_en.sym 
+vhdtdtfi -lib work D:/TOP/alarm_en.v -lang verilog -prj TOP -o alarm_en.spl -module alarm_en -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 alarm_en.spl D:/TOP/alarm_en.sym 

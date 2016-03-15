@@ -1,0 +1,4 @@
+vhdtdtfi -lib work F:/123/TOP/breathe_led.v -lang verilog -prj TOP -o breathe_led.spl -module breathe_led -template d:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 breathe_led.spl F:/123/TOP/breathe_led.sym 
+vhdtdtfi -lib work D:/TOP/breathe_led.v -lang verilog -prj TOP -o breathe_led.spl -module breathe_led -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 breathe_led.spl D:/TOP/breathe_led.sym 

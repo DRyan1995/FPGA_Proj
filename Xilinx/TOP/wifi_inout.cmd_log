@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/TOP/wifi_inout.v -lang verilog -prj TOP -o wifi_inout.spl -module wifi_inout -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 wifi_inout.spl D:/TOP/wifi_inout.sym 

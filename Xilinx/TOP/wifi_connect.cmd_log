@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/TOP/wifi_connect.v -lang verilog -prj TOP -o wifi_connect.spl -module wifi_connect -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 wifi_connect.spl D:/TOP/wifi_connect.sym 

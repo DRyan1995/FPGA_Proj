@@ -1,0 +1,2 @@
+vhdtdtfi -lib work F:/123/TOP/FAN.v -lang verilog -prj TOP -o FAN.spl -module FAN -template d:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 FAN.spl F:/123/TOP/FAN.sym 

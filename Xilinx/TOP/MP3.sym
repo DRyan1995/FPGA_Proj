@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="MP3">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2015-12-23T12:16:9</timestamp>
+    <attr value="MP3" name="VeriModel" />
+    <pin polarity="BiDirectional" x="384" y="-96" name="mp3_in" />
+    <pin polarity="BiDirectional" x="384" y="-32" name="mp3_out" />
+    <graph>
+        <rect width="256" x="64" y="-128" height="128" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-136" type="symbol" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-96" type="pin mp3_in" />
+        <line x2="384" y1="-96" y2="-96" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-32" type="pin mp3_out" />
+        <line x2="384" y1="-32" y2="-32" x1="320" />
+    </graph>
+</symbol>

@@ -1,0 +1,97 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : TOP.vf
+// /___/   /\     Timestamp : 12/23/2015 20:36:38
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family artix7 -verilog D:/TOP/TOP.vf -w D:/TOP/TOP.sch
+//Design Name: TOP
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module TOP(Alarm_in, 
+           alarm_key_in, 
+           BREATH_LED_EN, 
+           CLOCK, 
+           FAN_EN, 
+           SIGTAP_IN, 
+           WIFI_RXD_IN, 
+           WIFI_TXD_IN, 
+           alarm_en_out, 
+           Alarm_out, 
+           DHT11_TXD, 
+           FAN_OUT, 
+           led, 
+           SIGTAP_OUT, 
+           WIFI_RXD_OUT, 
+           WIFI_TXD_OUT, 
+           DHT11_DATA, 
+           MP3_IN, 
+           MP3_OUT);
+
+    input Alarm_in;
+    input alarm_key_in;
+    input BREATH_LED_EN;
+    input CLOCK;
+    input FAN_EN;
+    input SIGTAP_IN;
+    input WIFI_RXD_IN;
+    input WIFI_TXD_IN;
+   output alarm_en_out;
+   output Alarm_out;
+   output DHT11_TXD;
+   output FAN_OUT;
+   output [15:0] led;
+   output SIGTAP_OUT;
+   output WIFI_RXD_OUT;
+   output WIFI_TXD_OUT;
+    inout DHT11_DATA;
+    inout MP3_IN;
+    inout MP3_OUT;
+   
+   wire BREATH_LED_CLK;
+   wire DHT11_CLK;
+   wire WIFI_TXD_OUT_DUMMY;
+   wire WIFI_RXD_OUT_DUMMY;
+   wire WIFI_RXD_IN_DUMMY;
+   wire WIFI_TXD_IN_DUMMY;
+   
+   assign WIFI_RXD_OUT = WIFI_RXD_OUT_DUMMY;
+   assign WIFI_TXD_OUT = WIFI_TXD_OUT_DUMMY;
+   assign WIFI_RXD_IN_DUMMY = WIFI_RXD_IN;
+   assign WIFI_TXD_IN_DUMMY = WIFI_TXD_IN;
+   FAN  XLXI_1 (.en(FAN_EN), 
+               .fan_out(FAN_OUT));
+   DHT11_top  XLXI_4 (.clk(DHT11_CLK), 
+                     .TxD(DHT11_TXD), 
+                     .data(DHT11_DATA));
+   sigtap  XLXI_7 (.touch_in(SIGTAP_IN), 
+                  .touch_out(SIGTAP_OUT));
+   Alarm  XLXI_8 (.alarm_in(Alarm_in), 
+                 .alarm_out(Alarm_out));
+   alarm_en  XLXI_10 (.key_in(alarm_key_in), 
+                     .alarm_en(alarm_en_out));
+   breathe_led  XLXI_12 (.clk(BREATH_LED_CLK), 
+                        .en(BREATH_LED_EN), 
+                        .led(led[15:0]));
+   Clock_generate  XLXI_20 (.clk_100M(CLOCK), 
+                           .clk_50M_1(BREATH_LED_CLK), 
+                           .clk_50M_2(DHT11_CLK));
+   wifi_inout  XLXI_25 (.rxd_in(WIFI_RXD_IN_DUMMY), 
+                       .rxd_out(WIFI_RXD_OUT_DUMMY), 
+                       .txd_in(WIFI_TXD_IN_DUMMY), 
+                       .txd_out(WIFI_TXD_OUT_DUMMY));
+   MP3  XLXI_26 (.mp3_in(MP3_IN), 
+                .mp3_out(MP3_OUT));
+endmodule

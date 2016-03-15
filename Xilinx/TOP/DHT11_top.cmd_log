@@ -1,0 +1,2 @@
+vhdtdtfi -lib work F:/123/TOP/DHT11_top.v -lang verilog -prj TOP -o DHT11_top.spl -module DHT11_top -template d:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 DHT11_top.spl F:/123/TOP/DHT11_top.sym 
