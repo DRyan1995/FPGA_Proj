@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">智能家居客户端</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ip_address">IP地址：</string>
+    <string name="port">端口号：</string>
+    <string name="connect">连接</string>
+    <string name="led_on">开灯</string>
+    <string name="led_off">关灯</string>
+    <string name="air_on">开空调</string>
+    <string name="air_off">关空调</string>
+    <string name="temperature">获取温度</string>
+    <string name="humidity">获取湿度</string>
+    <string name="music_on">音乐开</string>
+    <string name="music_off">音乐关</string>
+
+</resources>
