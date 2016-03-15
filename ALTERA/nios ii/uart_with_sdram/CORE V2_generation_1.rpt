@@ -1,0 +1,81 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:/Proj/uart_with_sdram/ --output-directory="D:/Proj/uart_with_sdram/CORE V2/" --report-file="bsf:D:/Proj/uart_with_sdram/CORE V2.bsf" --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C35F672C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file="D:/Proj/uart_with_sdram/CORE V2.qsys"
+Progress: Loading uart_with_sdram/CORE V2.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding nios2 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding RS232 [altera_avalon_uart 13.0.1]
+Progress: Parameterizing module RS232
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 13.0.1]
+Progress: Parameterizing module sdram_controller
+Progress: Adding MYOUT [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module MYOUT
+Progress: Adding MYIN [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module MYIN
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: CORE V2.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: CORE V2.sysid: Time stamp will be automatically updated when this component is generated.
+Info: CORE V2.MYIN: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:/Proj/uart_with_sdram/ --output-directory="D:/Proj/uart_with_sdram/CORE V2/synthesis/" --file-set=QUARTUS_SYNTH --report-file="sopcinfo:D:/Proj/uart_with_sdram/CORE V2.sopcinfo" --report-file="html:D:/Proj/uart_with_sdram/CORE V2.html" --report-file="qip:D:/Proj/uart_with_sdram/CORE V2/synthesis/CORE V2.qip" --report-file="cmp:D:/Proj/uart_with_sdram/CORE V2.cmp" --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C35F672C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file="D:/Proj/uart_with_sdram/CORE V2.qsys" --language=VERILOG
+Progress: Loading uart_with_sdram/CORE V2.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding nios2 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding RS232 [altera_avalon_uart 13.0.1]
+Progress: Parameterizing module RS232
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 13.0.1]
+Progress: Parameterizing module sdram_controller
+Progress: Adding MYOUT [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module MYOUT
+Progress: Adding MYIN [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module MYIN
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: CORE V2.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: CORE V2.sysid: Time stamp will be automatically updated when this component is generated.
+Info: CORE V2.MYIN: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CORE V2: Generating CORE V2 "CORE V2" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 8 modules, 33 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 17 modules, 69 connections
+Info: merlin_domain_transform: After transform: 35 modules, 186 connections
+Info: merlin_router_transform: After transform: 44 modules, 222 connections
+Info: merlin_traffic_limiter_transform: After transform: 46 modules, 232 connections
+Info: merlin_burst_transform: After transform: 47 modules, 236 connections
+Info: reset_adaptation_transform: After transform: 48 modules, 185 connections
+Info: merlin_network_to_switch_transform: After transform: 65 modules, 223 connections
+Info: merlin_width_transform: After transform: 67 modules, 229 connections
+Info: limiter_update_transform: After transform: 67 modules, 231 connections
+Info: merlin_mm_transform: After transform: 67 modules, 231 connections
+Info: merlin_interrupt_mapper_transform: After transform: 68 modules, 234 connections
+Warning: CORE V2: "No matching role found for RS232:s1:dataavailable (dataavailable)"
+Warning: CORE V2: "No matching role found for RS232:s1:readyfordata (readyfordata)"
+Error: nios2: wrong # args: should be "sub_quartus_synth NAME"
+    while executing
+"sub_quartus_synth CORE V2_nios2"
+Info: nios2: "CORE V2" instantiated altera_nios2_qsys "nios2"
+Error: Generation stopped, 62 or more modules remaining
+Info: CORE V2: Done CORE V2" with 30 modules, 1 files, 336077 bytes
+Error: ip-generate failed with exit code 1: 2 Errors, 2 Warnings
+Info: Finished: Create HDL design files for synthesis

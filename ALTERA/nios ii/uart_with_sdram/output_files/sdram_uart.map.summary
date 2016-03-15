@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Dec 23 19:08:44 2015
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : sdram_uart
+Top-level Entity Name : sdram_uart
+Family : Cyclone II
+Total logic elements : 4,879
+    Total combinational functions : 3,922
+    Dedicated logic registers : 2,966
+Total registers : 2966
+Total pins : 69
+Total virtual pins : 0
+Total memory bits : 64,896
+Embedded Multiplier 9-bit elements : 4
+Total PLLs : 1

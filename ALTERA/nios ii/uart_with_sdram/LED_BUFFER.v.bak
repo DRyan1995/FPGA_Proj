@@ -1,0 +1,47 @@
+module LED_BUFFER(
+				clk,//50MHZ clock
+				rst,
+				mode,
+				led_out
+	);
+
+
+	input clk;
+	input rst;
+	input [1:0]mode;//00:off 01:welcome 11:alarm
+	output [17:0]led_out;
+	reg [17:0]led_out;
+
+	reg [26:0]counter;
+
+	parameter TIME_100ms = 27'd5_000_000;
+	always @(posedge clk or negedge rst) begin
+		if (!rst) 
+		begin
+			counter <= 27'd0;
+			if(mode == 2'b01)
+				led_out <= 1'b1;
+			else begin
+				led_out <= 18'b111_111_111_111_111_111;
+			end
+		end
+		else if (counter == TIME_100ms) 
+		begin
+			if(mode == 2'b00)
+				led_out <= 18'b0;
+			else if (mode == 2'b01) 
+			begin
+				led_out <= (led_out<<1);
+			end
+			else 
+			begin
+				led_out <= ~led_out;
+			end
+		end
+	end
+
+
+
+
+
+endmodule

@@ -1,0 +1,179 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:/Proj/uart_with_sdram/ --output-directory=D:/Proj/uart_with_sdram/CORE/ --report-file=bsf:D:/Proj/uart_with_sdram/CORE.bsf --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C35F672C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=D:/Proj/uart_with_sdram/CORE.qsys
+Progress: Loading uart_with_sdram/CORE.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding nios2 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding RS232 [altera_avalon_uart 13.0.1]
+Progress: Parameterizing module RS232
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 13.0.1]
+Progress: Parameterizing module sdram_controller
+Progress: Adding Sigtap [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module Sigtap
+Progress: Adding LEDMODE [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module LEDMODE
+Progress: Adding Alarm [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module Alarm
+Progress: Adding Alarm_en [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module Alarm_en
+Progress: Adding DHT11 [altera_avalon_uart 13.0.1]
+Progress: Parameterizing module DHT11
+Progress: Adding breathe_led [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module breathe_led
+Progress: Adding FAN [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module FAN
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: CORE.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: CORE.sysid: Time stamp will be automatically updated when this component is generated.
+Info: CORE.Sigtap: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CORE.Alarm: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CORE.Alarm_en: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:/Proj/uart_with_sdram/ --output-directory=D:/Proj/uart_with_sdram/CORE/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:D:/Proj/uart_with_sdram/CORE.sopcinfo --report-file=html:D:/Proj/uart_with_sdram/CORE.html --report-file=qip:D:/Proj/uart_with_sdram/CORE/synthesis/CORE.qip --report-file=cmp:D:/Proj/uart_with_sdram/CORE.cmp --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C35F672C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=D:/Proj/uart_with_sdram/CORE.qsys --language=VERILOG
+Progress: Loading uart_with_sdram/CORE.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding nios2 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding RS232 [altera_avalon_uart 13.0.1]
+Progress: Parameterizing module RS232
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 13.0.1]
+Progress: Parameterizing module sdram_controller
+Progress: Adding Sigtap [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module Sigtap
+Progress: Adding LEDMODE [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module LEDMODE
+Progress: Adding Alarm [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module Alarm
+Progress: Adding Alarm_en [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module Alarm_en
+Progress: Adding DHT11 [altera_avalon_uart 13.0.1]
+Progress: Parameterizing module DHT11
+Progress: Adding breathe_led [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module breathe_led
+Progress: Adding FAN [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module FAN
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: CORE.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: CORE.sysid: Time stamp will be automatically updated when this component is generated.
+Info: CORE.Sigtap: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CORE.Alarm: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CORE.Alarm_en: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CORE: Generating CORE "CORE" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 13 modules, 54 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 27 modules, 110 connections
+Info: merlin_domain_transform: After transform: 55 modules, 297 connections
+Info: merlin_router_transform: After transform: 69 modules, 353 connections
+Info: merlin_traffic_limiter_transform: After transform: 71 modules, 363 connections
+Info: merlin_burst_transform: After transform: 72 modules, 367 connections
+Info: reset_adaptation_transform: After transform: 73 modules, 286 connections
+Info: merlin_network_to_switch_transform: After transform: 100 modules, 344 connections
+Info: merlin_width_transform: After transform: 102 modules, 350 connections
+Info: limiter_update_transform: After transform: 102 modules, 352 connections
+Info: merlin_mm_transform: After transform: 102 modules, 352 connections
+Info: merlin_interrupt_mapper_transform: After transform: 103 modules, 355 connections
+Warning: CORE: "No matching role found for RS232:s1:dataavailable (dataavailable)"
+Warning: CORE: "No matching role found for RS232:s1:readyfordata (readyfordata)"
+Warning: CORE: "No matching role found for DHT11:s1:dataavailable (dataavailable)"
+Warning: CORE: "No matching role found for DHT11:s1:readyfordata (readyfordata)"
+Info: nios2: Starting RTL generation for module 'CORE_nios2'
+Info: nios2:   Generation command is [exec D:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I D:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I D:/altera/13.0/quartus/sopc_builder/bin/europa -I D:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.0/quartus/sopc_builder/bin -I D:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I D:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I D:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2 -I D:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2 -- D:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=CORE_nios2 --dir=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0001_nios2_gen/ --quartus_dir=D:/altera/13.0/quartus --verilog --config=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0001_nios2_gen//CORE_nios2_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2: # 2015.12.20 21:17:53 (*) Starting Nios II generation
+Info: nios2: # 2015.12.20 21:17:53 (*)   Checking for plaintext license.
+Info: nios2: # 2015.12.20 21:17:54 (*)   Plaintext license not found.
+Info: nios2: # 2015.12.20 21:17:54 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2: # 2015.12.20 21:17:54 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: nios2: # 2015.12.20 21:17:54 (*)   Elaborating CPU configuration settings
+Info: nios2: # 2015.12.20 21:17:54 (*)   Creating all objects for CPU
+Info: nios2: # 2015.12.20 21:17:54 (*)     Testbench
+Info: nios2: # 2015.12.20 21:17:55 (*)     Instruction decoding
+Info: nios2: # 2015.12.20 21:17:55 (*)       Instruction fields
+Info: nios2: # 2015.12.20 21:17:55 (*)       Instruction decodes
+Info: nios2: # 2015.12.20 21:17:55 (*)       Signals for RTL simulation waveforms
+Info: nios2: # 2015.12.20 21:17:55 (*)       Instruction controls
+Info: nios2: # 2015.12.20 21:17:55 (*)     Pipeline frontend
+Info: nios2: # 2015.12.20 21:17:55 (*)     Pipeline backend
+Info: nios2: # 2015.12.20 21:17:58 (*)   Generating RTL from CPU objects
+Info: nios2: # 2015.12.20 21:18:01 (*)   Creating encrypted RTL
+Info: nios2: # 2015.12.20 21:18:02 (*) Done Nios II generation
+Info: nios2: Done RTL generation for module 'CORE_nios2'
+Info: nios2: "CORE" instantiated altera_nios2_qsys "nios2"
+Info: jtag_uart: Starting RTL generation for module 'CORE_jtag_uart'
+Info: jtag_uart:   Generation command is [exec D:/altera/13.0/quartus/bin/perl/bin/perl.exe -I D:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I D:/altera/13.0/quartus/sopc_builder/bin/europa -I D:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.0/quartus/sopc_builder/bin -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=CORE_jtag_uart --dir=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0002_jtag_uart_gen/ --quartus_dir=D:/altera/13.0/quartus --verilog --config=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0002_jtag_uart_gen//CORE_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'CORE_jtag_uart'
+Info: jtag_uart: "CORE" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: RS232: Starting RTL generation for module 'CORE_RS232'
+Info: RS232:   Generation command is [exec D:/altera/13.0/quartus/bin/perl/bin/perl.exe -I D:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I D:/altera/13.0/quartus/sopc_builder/bin/europa -I D:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.0/quartus/sopc_builder/bin -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=CORE_RS232 --dir=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0003_RS232_gen/ --quartus_dir=D:/altera/13.0/quartus --verilog --config=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0003_RS232_gen//CORE_RS232_component_configuration.pl  --do_build_sim=0  ]
+Info: RS232: Done RTL generation for module 'CORE_RS232'
+Info: RS232: "CORE" instantiated altera_avalon_uart "RS232"
+Info: sysid: "CORE" instantiated altera_avalon_sysid_qsys "sysid"
+Info: sdram_controller: Starting RTL generation for module 'CORE_sdram_controller'
+Info: sdram_controller:   Generation command is [exec D:/altera/13.0/quartus/bin/perl/bin/perl.exe -I D:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I D:/altera/13.0/quartus/sopc_builder/bin/europa -I D:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.0/quartus/sopc_builder/bin -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=CORE_sdram_controller --dir=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0005_sdram_controller_gen/ --quartus_dir=D:/altera/13.0/quartus --verilog --config=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0005_sdram_controller_gen//CORE_sdram_controller_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram_controller: Done RTL generation for module 'CORE_sdram_controller'
+Info: sdram_controller: "CORE" instantiated altera_avalon_new_sdram_controller "sdram_controller"
+Info: Sigtap: Starting RTL generation for module 'CORE_Sigtap'
+Info: Sigtap:   Generation command is [exec D:/altera/13.0/quartus/bin/perl/bin/perl.exe -I D:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I D:/altera/13.0/quartus/sopc_builder/bin/europa -I D:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.0/quartus/sopc_builder/bin -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=CORE_Sigtap --dir=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0006_Sigtap_gen/ --quartus_dir=D:/altera/13.0/quartus --verilog --config=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0006_Sigtap_gen//CORE_Sigtap_component_configuration.pl  --do_build_sim=0  ]
+Info: Sigtap: Done RTL generation for module 'CORE_Sigtap'
+Info: Sigtap: "CORE" instantiated altera_avalon_pio "Sigtap"
+Info: LEDMODE: Starting RTL generation for module 'CORE_LEDMODE'
+Info: LEDMODE:   Generation command is [exec D:/altera/13.0/quartus/bin/perl/bin/perl.exe -I D:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I D:/altera/13.0/quartus/sopc_builder/bin/europa -I D:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.0/quartus/sopc_builder/bin -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=CORE_LEDMODE --dir=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0007_LEDMODE_gen/ --quartus_dir=D:/altera/13.0/quartus --verilog --config=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0007_LEDMODE_gen//CORE_LEDMODE_component_configuration.pl  --do_build_sim=0  ]
+Info: LEDMODE: Done RTL generation for module 'CORE_LEDMODE'
+Info: LEDMODE: "CORE" instantiated altera_avalon_pio "LEDMODE"
+Info: breathe_led: Starting RTL generation for module 'CORE_breathe_led'
+Info: breathe_led:   Generation command is [exec D:/altera/13.0/quartus/bin/perl/bin/perl.exe -I D:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I D:/altera/13.0/quartus/sopc_builder/bin/europa -I D:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.0/quartus/sopc_builder/bin -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=CORE_breathe_led --dir=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0008_breathe_led_gen/ --quartus_dir=D:/altera/13.0/quartus --verilog --config=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0008_breathe_led_gen//CORE_breathe_led_component_configuration.pl  --do_build_sim=0  ]
+Info: breathe_led: Done RTL generation for module 'CORE_breathe_led'
+Info: breathe_led: "CORE" instantiated altera_avalon_pio "breathe_led"
+Info: FAN: Starting RTL generation for module 'CORE_FAN'
+Info: FAN:   Generation command is [exec D:/altera/13.0/quartus/bin/perl/bin/perl.exe -I D:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I D:/altera/13.0/quartus/sopc_builder/bin/europa -I D:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.0/quartus/sopc_builder/bin -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=CORE_FAN --dir=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0009_FAN_gen/ --quartus_dir=D:/altera/13.0/quartus --verilog --config=C:/Users/lcyyy/AppData/Local/Temp/alt6789_4893458556222827267.dir/0009_FAN_gen//CORE_FAN_component_configuration.pl  --do_build_sim=0  ]
+Info: FAN: Done RTL generation for module 'CORE_FAN'
+Info: FAN: "CORE" instantiated altera_avalon_pio "FAN"
+Info: nios2_instruction_master_translator: "CORE" instantiated altera_merlin_master_translator "nios2_instruction_master_translator"
+Info: nios2_jtag_debug_module_translator: "CORE" instantiated altera_merlin_slave_translator "nios2_jtag_debug_module_translator"
+Info: nios2_instruction_master_translator_avalon_universal_master_0_agent: "CORE" instantiated altera_merlin_master_agent "nios2_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent: "CORE" instantiated altera_merlin_slave_agent "nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "CORE" instantiated altera_avalon_sc_fifo "nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "CORE" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "CORE" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "CORE" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "CORE" instantiated altera_merlin_router "id_router_002"
+Info: id_router_003: "CORE" instantiated altera_merlin_router "id_router_003"
+Info: limiter: "CORE" instantiated altera_merlin_traffic_limiter "limiter"
+Info: burst_adapter: "CORE" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "CORE" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "CORE" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "CORE" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "CORE" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "CORE" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_003: "CORE" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_003"
+Info: rsp_xbar_mux: "CORE" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file D:/Proj/uart_with_sdram/CORE/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "CORE" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file D:/Proj/uart_with_sdram/CORE/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "CORE" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file D:/Proj/uart_with_sdram/CORE/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file D:/Proj/uart_with_sdram/CORE/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: irq_mapper: "CORE" instantiated altera_irq_mapper "irq_mapper"
+Info: CORE: Done CORE" with 32 modules, 130 files, 2827231 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

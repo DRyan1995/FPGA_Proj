@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="sdram_uart">
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_jtag_uart:jtag_uart|CORE_jtag_uart_scfifo_w:the_CORE_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_nios2:nios2|CORE_nios2_bht_module:CORE_nios2_bht|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_4ag1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_nios2:nios2|CORE_nios2_dc_data_module:CORE_nios2_dc_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_29f1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_nios2:nios2|CORE_nios2_dc_tag_module:CORE_nios2_dc_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_uuf1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_nios2:nios2|CORE_nios2_dc_victim_module:CORE_nios2_dc_victim|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_9vc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_nios2:nios2|CORE_nios2_mult_cell:the_CORE_nios2_mult_cell|altera_mult_add:the_altmult_add_part_1" CBX_FILE_NAME="altera_mult_add_mpt2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_nios2:nios2|CORE_nios2_mult_cell:the_CORE_nios2_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_opt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_1s01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_nios2:nios2|CORE_nios2_register_bank_a_module:CORE_nios2_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_4of1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_jtag_uart:jtag_uart|CORE_jtag_uart_scfifo_r:the_CORE_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_nios2:nios2|CORE_nios2_mult_cell:the_CORE_nios2_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_1l01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_nios2:nios2|CORE_nios2_mult_cell:the_CORE_nios2_mult_cell|altera_mult_add:the_altmult_add_part_2" CBX_FILE_NAME="altera_mult_add_opt2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_nios2:nios2|lpm_add_sub:Add18" CBX_FILE_NAME="add_sub_8ri.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_nios2:nios2|CORE_nios2_ic_data_module:CORE_nios2_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_qed1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_nios2:nios2|CORE_nios2_ic_tag_module:CORE_nios2_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_9mg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_nios2:nios2|CORE_nios2_nios2_oci:the_CORE_nios2_nios2_oci|CORE_nios2_nios2_ocimem:the_CORE_nios2_nios2_ocimem|CORE_nios2_ociram_sp_ram_module:CORE_nios2_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_v871.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sdram_uart|CORE:inst|CORE_nios2:nios2|CORE_nios2_register_bank_b_module:CORE_nios2_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_5of1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,20 @@
+	component CORE _V2 is
+		port (
+			clk_clk                        : in    std_logic                     := 'X';             -- clk
+			reset_reset_n                  : in    std_logic                     := 'X';             -- reset_n
+			rs232_external_connection_rxd  : in    std_logic                     := 'X';             -- rxd
+			rs232_external_connection_txd  : out   std_logic;                                        -- txd
+			sdram_controller_wire_addr     : out   std_logic_vector(11 downto 0);                    -- addr
+			sdram_controller_wire_ba       : out   std_logic_vector(1 downto 0);                     -- ba
+			sdram_controller_wire_cas_n    : out   std_logic;                                        -- cas_n
+			sdram_controller_wire_cke      : out   std_logic;                                        -- cke
+			sdram_controller_wire_cs_n     : out   std_logic;                                        -- cs_n
+			sdram_controller_wire_dq       : inout std_logic_vector(15 downto 0) := (others => 'X'); -- dq
+			sdram_controller_wire_dqm      : out   std_logic_vector(1 downto 0);                     -- dqm
+			sdram_controller_wire_ras_n    : out   std_logic;                                        -- ras_n
+			sdram_controller_wire_we_n     : out   std_logic;                                        -- we_n
+			out_external_connection_export : out   std_logic_vector(7 downto 0);                     -- export
+			in_external_connection_export  : in    std_logic_vector(3 downto 0)  := (others => 'X')  -- export
+		);
+	end component CORE _V2;
+
